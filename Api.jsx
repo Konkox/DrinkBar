@@ -1,7 +1,5 @@
-import Media from  'react-media'
-import {Fragment} from 'react'
-
-
+import Media from "react-media";
+import { Fragment } from "react";
 
 const { useEffect, useState } = require("react");
 
@@ -16,16 +14,14 @@ const Api = () => {
 
   return (
     <div>
-      <h2>Najbogatsze banki świata</h2>
-        <ul>
-          {data.map((bankInfo) => (
-            <li key={bankInfo.id}>{bankInfo.bank_name}</li> 
-            
+      {/* <h2>Najbogatsze banki świata</h2>
+      <ul>
+        {data.map((bankInfo) => (
+          <li key={bankInfo.id}>{bankInfo.bank_name}</li>
+        ))}
+      </ul> */}
 
-          ))}
-        </ul>
-
-{/* <Media queries={{
+     <Media queries={{
           small: "(max-width: 499px)",
           medium: "(min-width: 500px) and (max-width: 1199px)",
           large: "(min-width: 1200px)"
@@ -63,9 +59,7 @@ const Api = () => {
        </>}
             </Fragment>
           )}
-        </Media> */}
-
-
+        </Media> 
     </div>
   );
 };
